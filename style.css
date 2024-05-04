@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  margin-right: 35px;
+  transition: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #37a1f2;
+}
+
+.toggle-icon {
+  display: flex;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 10% 0;
+}
+
+.home-content {
+  max-width: 600px;
+}
+.home-content h1 {
+  font-size: 46px;
+  line-height: 1.2;
+}
+.home-content h3 {
+  font-size: 30px;
+}
+.home-content h3 span {
+  color: #37a1f2;
+}
+.home-content p {
+  font-size: 16px;
+  margin: 15px 0;
+}
+.social-media a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  margin-bottom: 12px;
+}
+.social-media a i {
+  padding: 4px;
+  border: 2px solid #37a1f2;
+  border-radius: 50%;
+}
+.social-media a:hover {
+  background: #37a1f2;
+  color: #f0f3fd;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 32px;
+  background: #37a1f2;
+  border: 2px solid #37a1f2;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #f0f3fd;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #37a1f2;
+}
+.home-img img {
+  margin-left: 120px;
+  pointer-events: none;
+  border-radius: 10%;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Style untuk bagian About */
+#about {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007bff; /* Warna biru untuk hover */
+}
+
+/* Style untuk bagian Skill */
+#skill {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.skill-icons {
+  margin-bottom: 48px;
+}
+
+.skill-icons img {
+  width: 200px;
+  height: 200px;
+}
+
+.skill-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skill-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  flex: 1;
+}
+
+.skill h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 20px;
+  background-color: #007bff;
+}
+
+/* Level untuk setiap skill */
+.skill-level.html {
+  width: 90%;
+}
+.skill-level.css {
+  width: 80%;
+}
+.skill-level.javascript {
+  width: 70%;
+}
+/* Style untuk bagian Work Experience */
+#work-experience {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.work-experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work-experience-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.work-entry {
+  margin-bottom: 40px;
+}
+
+.work-entry h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #333;
+}
+
+.work-entry .company {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.work-entry .date {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.work-entry ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.work-entry ul li {
+  font-size: 16px;
+  color: #666;
+}
